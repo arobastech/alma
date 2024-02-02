@@ -1,7 +1,5 @@
 FROM almalinux
-RUN yum -y update \
-    yum -y install exim \
-    systemctl start exim
+RUN yum -y install exim && systemctl start exim
 
 
 EXPOSE 25
